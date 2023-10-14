@@ -24,6 +24,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    if (!form?.name || !form?.email || !form?.message) return
+
     setLoading(() => true)
 
     fetch('/api/email/send', {

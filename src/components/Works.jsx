@@ -7,6 +7,7 @@ import {github} from '../assets'
 import {SectionWrapper} from '../hoc'
 import {projects} from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
+import PropTypes from 'prop-types'
 
 
 const ProjectCard = ({ description, image, index, name, source_code_link, tags }) => (
@@ -61,12 +62,12 @@ const ProjectCard = ({ description, image, index, name, source_code_link, tags }
 )
 
 ProjectCard.propTypes = {
-  description: String,
-  image: String,
-  index: Number,
-  name: String,
-  source_code_link: String,
-  tags: Array,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  index: PropTypes.number,
+  name: PropTypes.string,
+  source_code_link: PropTypes.string,
+  tags: PropTypes.array,
 }
 
 const Works = () => {

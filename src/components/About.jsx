@@ -6,6 +6,7 @@ import {styles} from '../style'
 import {services} from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import {SectionWrapper} from '../hoc'
+import PropTypes from 'prop-types'
 
 const ServiceCard = ({index, title, icon}) => {
   return (
@@ -31,9 +32,9 @@ const ServiceCard = ({index, title, icon}) => {
 }
 
 ServiceCard.propTypes = {
-  index: Number,
-  icon: String,
-  title: String,
+  icon: PropTypes.string,
+  index: PropTypes.number,
+  title: PropTypes.string,
 }
 
 const About = () => {

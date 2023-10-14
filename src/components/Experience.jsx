@@ -2,6 +2,7 @@ import React from 'react'
 import {VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component'
 import {motion} from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
+import PropTypes from 'prop-types'
 
 import {styles} from '../style'
 import {experiences} from '../constants'
@@ -40,13 +41,12 @@ const ExperienceCard = ({company_name, date, icon, iconBg, points, title}) => (
 )
 
 ExperienceCard.propTypes = {
-  company_name: String,
-  date: [String, Date],
-  icon: String,
-  iconBg: String,
-  // index: Number,
-  points: Array,
-  title: String,
+  company_name: PropTypes.string,
+  date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date), PropTypes.func]),
+  icon: PropTypes.string,
+  iconBg: PropTypes.string,
+  points: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string,
 }
 
 const Experience = () => {

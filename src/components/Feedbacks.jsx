@@ -5,6 +5,7 @@ import {styles} from '../style'
 import {SectionWrapper} from '../hoc'
 import {fadeIn, textVariant} from '../utils/motion'
 import {testimonials} from '../constants'
+import PropTypes from 'prop-types'
 
 const FeedbackCard = ({ company, designation, image, index, name, testimonial }) => (
   <motion.div
@@ -36,12 +37,12 @@ const FeedbackCard = ({ company, designation, image, index, name, testimonial })
 )
 
 FeedbackCard.propTypes = {
-  company: String,
-  designation: String,
-  name: String,
-  image: String,
-  index: Number,
-  testimonial: String,
+  company: PropTypes.string,
+  designation: PropTypes.string,
+  image: PropTypes.string,
+  index: PropTypes.number,
+  name: PropTypes.string,
+  testimonial: PropTypes.string,
 }
 
 const Feedbacks = () => {

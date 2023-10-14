@@ -3,6 +3,7 @@ import {Canvas} from '@react-three/fiber'
 import {Decal, Float, OrbitControls, Preload, useTexture} from '@react-three/drei'
 
 import CanvasLoader from '../loader'
+import PropTypes from 'prop-types'
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imageUrl])
@@ -31,7 +32,7 @@ const Ball = (props) => {
 }
 
 Ball.propTypes = {
-  imageUrl: String
+  imageUrl: PropTypes.string
 }
 
 const BallCanvas = ({icon}) => (
@@ -49,7 +50,7 @@ const BallCanvas = ({icon}) => (
 )
 
 BallCanvas.propTypes = {
-  icon: String
+  icon: PropTypes.string
 }
 
 export default BallCanvas

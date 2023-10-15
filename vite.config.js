@@ -8,7 +8,12 @@ export default defineConfig(
     const env = loadEnv(mode, process.cwd(), '')
 
     return {
-      plugins: [react(), Sitemap()],
+      plugins: [
+        react(),
+        Sitemap({
+          hostname: env.VITE_BASE_URL || '0.0.0.0',
+        })
+      ],
       server: {
         host: env.VITE_HOST || '0.0.0.0',
         port: env.VITE_PORT || 8000,

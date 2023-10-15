@@ -1,5 +1,6 @@
 import {defineConfig, loadEnv} from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import Sitemap from 'vite-plugin-sitemap'
 
 // https://vitejs.dev/config/
 export default defineConfig(
@@ -7,7 +8,7 @@ export default defineConfig(
     const env = loadEnv(mode, process.cwd(), '')
 
     return {
-      plugins: [react()],
+      plugins: [react(), Sitemap()],
       server: {
         host: env.VITE_HOST || '0.0.0.0',
         port: env.VITE_PORT || 8000,

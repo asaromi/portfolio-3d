@@ -30,4 +30,6 @@ yarn.lock
 # .env.local file
 .env.local
 .env.*.local
-.env.local
+
+# generated sitemap
+public/sitemap.xml

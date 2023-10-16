@@ -1,6 +1,7 @@
 import React, {Suspense, useEffect, useState} from 'react'
 import {Canvas} from '@react-three/fiber'
 import {OrbitControls, Preload, useGLTF} from '@react-three/drei'
+import PropTypes from 'prop-types'
 
 import CanvasLoader from '../Loader'
 
@@ -19,6 +20,10 @@ const Computers = ({ isMobile }) => {
       />
     </mesh>
   )
+}
+
+Computers.propTypes = {
+  isMobile: PropTypes.bool.isRequired
 }
 
 const ComputersCanvas = () => {

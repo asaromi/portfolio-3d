@@ -46,7 +46,7 @@ FeedbackCard.propTypes = {
 }
 
 const Feedbacks = () => {
-  return (
+  return testimonials.length > 0 && (
     <div className="mt-12 bg-black-100 rounded-[20px]">
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>

@@ -221,14 +221,14 @@ const experiences = [
 ];
 
 const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Zani",
-    designation: "General Project Manager",
-    company: "TAV Digital Agency & Production",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
+  // {
+  //   testimonial:
+  //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+  //   name: "Zani",
+  //   designation: "General Project Manager",
+  //   company: "TAV Digital Agency & Production",
+  //   image: "https://randomuser.me/api/portraits/women/4.jpg",
+  // },
   // {
   //   testimonial:
   //     "I've never met a web developer who truly cares about their clients' success like Rick does.",

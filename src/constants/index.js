@@ -118,10 +118,10 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "Jan 2020 - Feb 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing Database (RDBMS) before developing the website.",
+      "Designing Analyzed System when developing the website.",
+      "Build some features on the website using Laravel Framework with HTML, Bootstrap, and JavaScript.",
+      "Implementing the basics of Git on real project."
     ],
   },
   {
@@ -129,12 +129,13 @@ const experiences = [
     company_name: "Sebelas Maret University",
     icon: uns,
     iconBg: "#FFFFFF",
-    date: "Jan 2018 - Jun 2020",
+    date: "Feb 2018 - Jan 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Open Source Class.",
+      "Data Structures and Algorithm Class.",
+      "Open Source Class.",
+      "Software Engineering Class.",
+      "Numerical Methods Class.",
     ],
   },
   {
@@ -144,10 +145,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2021 - Jan 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analyze and Design Database with Frontend Developer from UI Design.",
+      "Build most of API features for website course (Admin & User side) using NodeJS - Express and PostgreSQL.",
+      "Successfully deliver some services flows like: Forgot Password, Course Management, Exercise Flow, Payment Flow (excludes integrated Payment Gateway), etc.",
+      "Managing codebase and task with Github and Jira Software. Even though only 2 developers working on the Project."
     ],
   },
   {
@@ -157,23 +158,23 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Oct 2021 - Mar 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Design and analyze database structure before developing the website.",
+      "Build & maintenance some features on various projects with PHP - Laravel Framework.",
+      "Handling Projects : Arts Marketplace, Fresh meats & vegetables Marketplace, etc.",
+      "Managing codebase and task with Github and Gitlab.",
     ],
   },
   {
-    title: "Jr. Fullstack Developer",
+    title: "Junior Fullstack Developer",
     company_name: "PT. Gorry Gourmet Indonesia",
     icon: gorry,
     iconBg: "#FFFFFF",
     date: "May 2022 - Oct 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully deliver some API features for mobile app using NodeJS - Express and MongoDB.",
+      "Successfully deliver some admin features on web using ReactJS - NextJS, Material UI.",
+      "Deliver realtime chat features using Firebase - Firestore.",
+      "Managing codebase and task with other developers and Product Manager using Github and Trelo.",
     ],
   },
   {
@@ -183,10 +184,8 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Oct 2022 - Jun 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Successfully deliver some admin features on web course https://buildwithangga.com .",
+      "Manage codebase with Git and develop features using Laravel Framework, MySQL/MariaDB, and Bootstrap.",
     ],
   },
   {
@@ -196,10 +195,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jul 2022 - Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Analyzing and Designing Database (RDBMS) before developing the website and deploy to AWS RDS (MariaDB) when already done.",
+      "Revamp Website www.fashionagentsaustralia.com with main features.",
+      "Develop some API services and integrate latest daily feeds with Instagram API.",
+      "Integrate subscribe functionality with Klaviyo.",
+      "Implementing responsive design and ensuring cross-browser compatibility with ReactJS - NextJS and TailwindCSS.",
+      "Deploying website to AWS EC2 with Nginx reverse proxy.",
     ],
   },
   {
@@ -209,9 +210,11 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "Nov 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications and API services for new and existing features.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Using Jira Software that integrate with Github to manage codebase and task.",
+      "Implementing responsive design and ensuring cross-browser compatibility with VueJS - NuxtJS and TailwindCSS.",
+      "Developing API services with NodeJS - Express and MongoDB.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -251,24 +254,28 @@ const projects = [
       "Amazon Clone is a web application that allows users to search for products, add them to their cart, and checkout using Stripe.",
     tags: [
       {
-        name: "reactjs",
-        color: "green-text-gradient",
-      },
-      {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "react-redux",
         color: "green-text-gradient",
       },
       {
         name: "firebase",
         color: "pink-text-gradient",
       },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "blue-text-gradient",
+      },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/asaromi/next-amazon",
   },
   // {
   //   name: "Job IT",

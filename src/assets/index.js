@@ -21,7 +21,7 @@ import php from './tech/php.png'
 import postgresql from './tech/postgres.png'
 import vuejs from './tech/vue.png'
 
-import bidikkampus from './company/bidikkampus.jpg'
+import bidikkampus from './company/bidikkampus.png'
 import bwa from './company/bwa.png'
 import gorry from './company/gorry.png'
 import kku from './company/kku.jpg'

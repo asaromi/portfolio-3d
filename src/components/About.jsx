@@ -49,7 +49,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        {`I’m a Web Developer with experience in JavaScript/Node.js and PHP, and expertise in library or frameworks React.js/Next.js, Nuxt.js, Express.js, Laravel and Tailwind CSS. I also familiar with Linux, and have been using it as my daily device in 4 years. I’m a quick learner and collaborate to clients or company to deliver some projects, features and solving the real-world problems.`}
+        {`I'm a web developer with experience in JavaScript/Node.js, PHP, and expertise in libraries or frameworks React.js/Next.js, Nuxt.js, Express.js, Laravel, and Tailwind CSS. I am also familiar with Linux and have been using it as my daily device for 4 years. I'm a quick learner and collaborate closely with clients or companies to solve real-world problems and deliver several projects and features.`}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

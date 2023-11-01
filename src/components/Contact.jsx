@@ -6,6 +6,8 @@ import {EarthCanvas} from './canvas'
 import {SectionWrapper} from '../hoc'
 import {slideIn} from '../utils/motion'
 
+const apiUrl = import.meta.env.VITE_API_URL
+
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -21,36 +23,37 @@ const Contact = () => {
     setForm((prevForm) => ({ ...prevForm, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     if (!form?.name || !form?.email || !form?.message) return
 
     setLoading(() => true)
 
-    fetch('/api/email/send', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(form),
-    })
-      .then(async (res) => {
-        if (!res.ok) throw new Error(await res.text())
+    try {
+      const response = await fetch(`${apiUrl}/email/send`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(form),
+      }).then(async (res) => {
+        const text = await res.text()
+        const status = !res.ok ? 'ERROR' : 'OK'
+        return { status, text }
+      })
 
-        return await res.text()
-      })
-      .catch((err) => {
-        console.error(err)
-      })
-      .finally(() => {
-        setLoading(() => false)
-        setForm(() => ({
-          name: '',
-          email: '',
-          message: ''
-        }))
-      })
+      if (response.status === 'ERROR') throw new Error(response.text)
+    } catch (err) {
+      console.error(err)
+    } finally {
+      setLoading(() => false)
+      setForm(() => ({
+        name: '',
+        email: '',
+        message: ''
+      }))
+    }
   }
 
   return (

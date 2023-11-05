@@ -8,6 +8,14 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  laravel,
+  php,
+  vuejs,
+  firebase,
+  mysql,
+  postgresql,
+  linux,
+
   bidikkampus,
   bwa,
   gorry,
@@ -15,14 +23,9 @@ import {
   ordo,
   tav,
   uns,
-  carrent,
+  myrobin,
 
-  laravel,
-  php,
-  vuejs,
-  firebase,
-  mysql,
-  postgresql, linux, myrobin,
+  amazon,
 } from '../assets'
 
 export const navLinks = [
@@ -254,7 +257,7 @@ const projects = [
       "Amazon Clone is a web application that allows users to search for products, add them to their cart, and checkout using Stripe.",
     tags: [
       {
-        name: "nextjs",
+        name: "next",
         color: "blue-text-gradient",
       },
       {
@@ -274,8 +277,9 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: carrent,
+    image: amazon,
     source_code_link: "https://github.com/asaromi/next-amazon",
+    demo_url: "https://next-amazon.pages.dev",
   },
   // {
   //   name: "Job IT",

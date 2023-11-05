@@ -30,10 +30,8 @@ import ordo from './company/ordo.jpg'
 import tav from './company/tav.jpeg'
 import uns from './company/uns.png'
 
-
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
+//
+import amazon from './projects/amazon-clone.png'
 
 export {
   logo,
@@ -59,10 +57,6 @@ export {
   postgresql,
   vuejs,
 
-  carrent,
-  jobit,
-  tripguide,
-
   bidikkampus,
   bwa,
   gorry,
@@ -71,4 +65,6 @@ export {
   ordo,
   tav,
   uns,
+
+  amazon,
 }

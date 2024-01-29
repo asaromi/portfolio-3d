@@ -2,10 +2,10 @@ import React from 'react'
 import Tilt from 'react-tilt'
 import {motion} from 'framer-motion'
 
-import {styles} from '../style'
+import {styles} from '../assets/style.js'
 import {github} from '../assets'
 import {SectionWrapper} from '../hoc'
-import {projects} from '../constants'
+import {projects} from '../utils/constant'
 import {fadeIn, textVariant} from '../utils/motion'
 import PropTypes from 'prop-types'
 

@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react'
 import {motion} from 'framer-motion'
 
-import {styles} from '../style'
+import {styles} from '../assets/style.js'
 import {EarthCanvas} from './canvas'
 import {SectionWrapper} from '../hoc'
 import {slideIn} from '../utils/motion'

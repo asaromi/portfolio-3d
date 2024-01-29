@@ -4,8 +4,8 @@ import {motion} from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
 import PropTypes from 'prop-types'
 
-import {styles} from '../style'
-import {experiences} from '../constants'
+import {styles} from '../assets/style.js'
+import {experiences} from '../utils/constant'
 import {textVariant} from '../utils/motion'
 import {SectionWrapper} from '../hoc'
 

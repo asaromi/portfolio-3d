@@ -26,7 +26,7 @@ import {
   myrobin,
 
   amazon,
-} from '../assets'
+} from '../assets/index.js'
 
 export const navLinks = [
   {

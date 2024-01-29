@@ -1,10 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {styles} from '../style'
+import {styles} from '../assets/style.js'
 import {SectionWrapper} from '../hoc'
 import {fadeIn, textVariant} from '../utils/motion'
-import {testimonials} from '../constants'
+import {testimonials} from '../utils/constant'
 import PropTypes from 'prop-types'
 
 const FeedbackCard = ({ company, designation, image, index, name, testimonial }) => (

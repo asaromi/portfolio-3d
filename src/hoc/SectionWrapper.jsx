@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 
-import {styles} from '../style'
+import {styles} from '../assets/style.js'
 import {staggerContainer} from '../utils/motion'
 
 const SectionWrapper = (Component, idName) =>

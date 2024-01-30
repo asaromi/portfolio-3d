@@ -1,11 +1,14 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { UnderDevelopment } from './components'
+import { Home, Reviews } from './components/pages'
 
 const App = () => {
 	return (
 		<BrowserRouter>
-			<UnderDevelopment/>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/reviews" element={<Reviews />} />
+			</Routes>
 		</BrowserRouter>
 	)
 }

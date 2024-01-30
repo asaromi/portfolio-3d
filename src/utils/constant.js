@@ -45,7 +45,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Fullstack JavaScript Developer",
     icon: web,
   },
   {
@@ -53,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Linux Enthusiast",
+    title: "Frontend Developer",
     icon: creator,
   },
 ];
@@ -211,7 +211,7 @@ const experiences = [
     company_name: "PT. MyRobin Indonesia Teknologi",
     icon: myrobin,
     iconBg: "#FFFFFF",
-    date: "Nov 2022 - Present",
+    date: "Nov 2022 - Jan 2024",
     points: [
       "Developing and maintaining web applications and API services for new and existing features.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

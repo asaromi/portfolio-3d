@@ -22,6 +22,18 @@ export default {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
+    maxHeight: (theme) => ({
+      ...theme("height"),
+    }),
+    minHeight: (theme) => ({
+      ...theme("height"),
+    }),
+    maxWidth: (theme) => ({
+      ...theme("width"),
+    }),
+    minWidth: (theme) => ({
+      ...theme("width"),
+    }),
   },
   plugins: [],
 }

@@ -10,9 +10,5 @@ export async function onRequest(context) {
 		},
 	})
 
-	if (!response.ok) {
-		throw new Error(response.statusText)
-	}
-
 	return await response.json()
 }

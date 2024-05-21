@@ -2,13 +2,11 @@
 
 export async function onRequest(context) {
 	console.log(`[LOGGING FROM /hello]: Request came from ${context.request}`)
-	const response = new Response({
-		body: JSON.stringify({ message: 'Hello from Cloudflare Worker!' }),
-		status: 200,
-		headers: {
-			'Content-Type': 'application/json',
-		},
-	})
-
-	return await response.json()
+	return new Response(
+		JSON.stringify({
+			message: 'Hello from the API',
+		}), {
+			status: 200,
+			headers: { 'Content-Type': 'application/json' },
+		})
 }

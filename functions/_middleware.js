@@ -6,8 +6,10 @@ import { errorResponse } from '../src/utils/response.js'
  * @param {EventContext} context
  */
 
-export async function onRequest(context) {
+export async function onRequest(context, env) {
 	try {
+		console.log('env:', env)
+
 		const firebaseConfig = {
 			apiKey: context.env.VITE_FIREBASE_API_KEY,
 			authDomain: context.env.VITE_FIREBASE_AUTH_DOMAIN,

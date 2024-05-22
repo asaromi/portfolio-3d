@@ -1,5 +1,5 @@
-import { getApps, initializeApp } from 'firebase/app'
-import { getFirestore } from 'firebase/firestore'
+import { getApps, initializeApp, FirebaseApp } from 'firebase/app'
+import { getFirestore, Firestore } from 'firebase/firestore'
 import { errorResponse } from '../src/utils/response.js'
 
 /**
@@ -23,6 +23,9 @@ export async function onRequest(context, env) {
 		const [app] = getApps().length ? getApps() : [initializeApp(firebaseConfig)]
 		const firestore = getFirestore(app)
 
+		console.log('is FirebaseApp instance?', app instanceof FirebaseApp)
+		console.log('app:', app)
+		console.log('is Firestore instance?', firestore instanceof Firestore)
 		console.log('firestore:', firestore)
 
 		const body = context.request.headers.get('Content-Type') === 'application/json' ? await context.request.json() : {}

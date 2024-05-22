@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import { get, store, query as q } from '../../src/utils/firestore.js'
 import { errorResponse, successResponse } from '../../src/utils/response.js'
 

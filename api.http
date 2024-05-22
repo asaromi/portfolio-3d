@@ -1,0 +1,13 @@
+### [GET] Reviews
+GET http://localhost:8788/api/reviews
+
+### [POST] Reviews
+POST http://localhost:8788/api/reviews
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "role": "anjay",
+  "company": "anjay",
+  "message": "Great product"
+}

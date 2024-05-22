@@ -18,8 +18,9 @@ const httpRequest = async (url, options) => {
 	const response = await fetch(url, options)
 
 	if (!response.ok) throw new Error(response.statusText)
+	const result = await response?.json() || await response.text()
 
-	return await response.json()
+	return result
 }
 
 export default httpRequest

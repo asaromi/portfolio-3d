@@ -33,3 +33,4 @@ yarn.lock
 
 # generated sitemap
 public/sitemap.xml
+.wrangler
